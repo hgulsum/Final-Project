@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  .header {
+    background-color: #1d1d1d; 
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo-img {
+    max-height: 50px;  
+  }
+  
+  .nav {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .nav-list li {
+    position: relative;
+  }
+  
+  .nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    color: #f4a261;
+  }
+  
+  .cta {
+    margin-left: 20px;
+  }
+  
+  .cta-btn {
+    background-color: #f4a261; 
+    color: #121212;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e07b4e;
+    color: #fff;
+  }
+  
+  .cta-btn:focus {
+    outline: none;
+  }
+ 
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('Leonardo_Anime_XL_Konjiki_no_Yami_Good_Anatomy_Excellent_Quali_1.jpg') no-repeat center center/cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+  }
+  
+  .hero-content {
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #f4a261; 
+  }
+  
+  .hero-tagline {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.8;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .cta-btn {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+  
+  .primary {
+    background-color: #f4a261;
+    color: #121212;
+  }
+  
+  .secondary {
+    background-color: transparent;
+    border: 2px solid #f4a261;
+    color: #f4a261;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e07b4e;
+    transform: scale(1.05);
+  }
+  
+  .cta-btn:focus {
+    outline: none;
+  }
+  
+  .hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+  
+
+  .about-anime {
+    background-color: #1d1d1d;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .anime-media {
+    flex: 1;
+  }
+  
+  .anime-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .anime-info {
+    flex: 1.5;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f4a261;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .anime-description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .anime-details {
+    margin-bottom: 30px;
+  }
+  
+  .anime-detail {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .anime-detail strong {
+    color: #f4a261; 
+  }
+  
+  .anime-detail span {
+    font-weight: 500;
+  }
+  
+  .cta {
+    text-align: center;
+  }
+  
+  .cta-btn {
+    background-color: #f4a261; 
+    color: #121212;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e07b4e; 
+    transform: scale(1.05);
+  }
+  
+  .cta-btn:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .anime-media {
+      margin-bottom: 20px;
+    }
+  
+    .anime-info {
+      flex: 1;
+    }
+  }
+  
+
+  .featured {
+    background-color: #1d1d1d; 
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f4a261;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+ 
+  .episode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #2a2a2a; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .episode-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .episode-info {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .episode-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .episode-description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+  
+  .cta-btn {
+    background-color: #f4a261;
+    color: #121212;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e07b4e; 
+    transform: scale(1.05);
+  }
+  
+  .cta-btn:focus {
+    outline: none;
+  }
+  
+
+  .trailer {
+    margin-top: 50px;
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .trailer-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #f4a261;
+    text-align: center;
+  }
+  
+  .trailer-video iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .trailer-video {
+    margin-bottom: 20px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .episode {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .episode-image img {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+  
+    .episode-info {
+      padding-left: o;
+    }
+  
+    .cta-btn {
+      width: 100%;
+    }
+}
+
+.character-spotlights {
+  background-color: #1d1d1d; 
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f4a261; 
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.character-card {
+  background-color: #2a2a2a; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.character-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.character-info {
+  flex: 1;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.character-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #f4a261; 
+}
+
+.character-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.cta-btn {
+  background-color: #f4a261; 
+  color: #121212;
+  padding: 2px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #e07b4e; 
+  transform: scale(1.05);
+}
+
+.cta-btn:focus {
+  outline: none;
+}
+
+
+@media (max-width: 768px) {
+  .character-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .character-image img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .character-info {
+    padding-left: 0;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+}
+ 
+  .community {
+    background-color: #1d1d1d;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f4a261; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .community-description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 40px;
+  }
+  
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .social-link {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+  
+  .social-link i {
+    font-size: 20px;
+  }
+  
+  .social-link:hover {
+    background-color: #f4a261; 
+    transform: scale(1.05);
+  }
+  
+  .social-link:focus {
+    outline: none;
+  }
+  
+
+  .community-link .cta-btn {
+    background-color: #f4a261;
+    color: #121212;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+  
+  .community-link .cta-btn:hover {
+    background-color: #e07b4e;
+    transform: scale(1.05);
+  }
+  
+  .community-link .cta-btn:focus {
+    outline: none;
+  }
+  
+
+  @media (max-width: 768px) {
+    .social-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .community-description {
+      font-size: 16px;
+    }
+  }
+  
+
+  .merchandise-store {
+    background-color: #1d1d1d; 
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f4a261; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .store-description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 40px;
+  }
+  
+
+  .merchandise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .merchandise-item {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .merchandise-item:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  }
+  
+  .merchandise-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .item-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f4a261; 
+    margin-bottom: 10px;
+  }
+  
+  .item-description {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  
+  .item-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f4a261;  
+    margin-bottom: 15px;
+  }
+  
+  
+  .cta-btn {
+    background-color: #f4a261;
+    color: #121212;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e07b4e; 
+    transform: scale(1.05);
+  }
+  
+  .cta-btn:focus {
+    outline: none;
+  }
+  
+
+  @media (max-width: 768px) {
+    .merchandise-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .store-description {
+      font-size: 16px;
+    }
+  
+    .item-title {
+      font-size: 18px;
+    }
+  
+    .item-price {
+      font-size: 16px;
+    }
+  }
+
+  
+  .footer {
+    background-color: #1d1d1d; 
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f4a261; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f4a261;
+  }
+  
+ 
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #f4a261; 
+  }
+  
+
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 30px;
+    }
+  
+    .footer-bottom p {
+      margin-bottom: 10px;
+    }
+  
+    .social-icons {
+      margin-top: 20px;
+    }
+  }
+  
